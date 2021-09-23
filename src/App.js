@@ -14,7 +14,8 @@ function App() {
   const dispatch = useDispatch();
   const userName = useSelector(selectUserName);
   const userEmail = useSelector(selectUserEmail);
-
+  console.log(userName)
+  console.log(userEmail)
   const handleSignIn = () => {
     auth.signInWithPopup(provider).then((result) => {
       dispatch(
